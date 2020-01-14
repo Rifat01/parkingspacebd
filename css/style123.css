@@ -1,0 +1,47 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: candara;
+	
+}
+
+.mid{
+	width: 80%;
+	margin: 100px auto;
+}
+
+
+
+
+.reg {
+	width: 500px;
+	margin: auto; 
+	border: 1px solid #ccc;
+	padding: 30px;
+}
+
+.reg  input {
+	display: block;
+	padding: 10px;
+	border: 1px solid #333;
+	width: 100%;
+	box-sizing: border-box;
+}
+.reg input [type =" ratio"]{
+
+	display: inline;
+}
+
+.reg  input[type="submit"]{
+	margin-top: 10px;
+	cursor: pointer;
+	background-color: #000;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+h1 {
+	text-align: center;
+}
