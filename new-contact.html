@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Parking Space Bangladesh">
+    <meta name="author" content="Rifat">
+    <link rel="shortcut icon" href="../psb/images/car.png">
+    <title>Parking Space Bangladesh</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link href="../psb/css/home.css"   rel="stylesheet" type="text/css"/>
+    <script src="../psb/css/contact.js"></script>
+
+   
+
+</head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body style="background-color:#787878;">
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top top-bar clearfix">
+            <a class="navbar-brand image" href="home.php">
+                <h1 class="font124 fcolor123">PSB</h1>
+            </a>
+
+            <!-- Toggler Button -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon fcolor1"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fcolor2 font124" href="home.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fcolor2 font124" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fcolor2 font124 active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fcolor2 font124 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Registration</a>
+                        <div class="dropdown-menu" style="margin-top:10px;">
+                            <a class="dropdown-item" href="http://localhost/psb/registration.html">As Driver</a>
+                            <a class="dropdown-item" href="#">As Space Owner</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"> <button type="button" class="btn btn-outline-success font124" style="border-radius: 20px;">Login</button> </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>  
+
+<h3 style="text-align:center;">Contact Us</h3>
+<p style="text-align:center;"><i>Feel free to share your experience</i></p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="bangladesh">Bangladesh</option>
+      </select>
+
+      <label for="division">Division</label>
+    <select id="division" name="division">
+      <option value="borishal">Borishal</option>
+      <option value="chattagram">Chattagram</option>
+      <option value="dhaka">Dhaka</option>
+      <option value="khulna">Khulna</option>
+      <option value="mymensingh">Mymensingh</option>
+      <option value="rajshahi">Rajshahi</option>
+      <option value="rangpur">Rangpur</option>
+      <option value="sylhet">Sylhet</option>
+      </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<h3><i>Visit Us</i></h3>
+<address>
+Bashundhara, Dhaka-1229, Bangladesh<br> 
+Phone: +880-2-55668200<br>
+Fax: +880-2-55668202 <br>
+registrar@northsouth.edu<br>
+</address>
+
+</body>
+</html>

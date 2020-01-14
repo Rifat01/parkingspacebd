@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Parking Space Bangladesh">
+    <meta name="author" content="Rifat">
+    <link rel="shortcut icon" href="../psb/images/car.png">
+    <title>Parking Space Bangladesh</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link href="../psb/css/home.css"   rel="stylesheet" type="text/css"/>
+    <script src="../psb/css/contact.js"></script>
+    <link rel="stylesheet" href="style123.css">
+   
+
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top top-bar clearfix">
+            <a class="navbar-brand image" href="home.php">
+                <h1 class="font124 fcolor123">PSB</h1>
+            </a>
+
+            <!-- Toggler Button -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon fcolor1"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fcolor2 font124" href="home.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fcolor2 font124" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fcolor2 font124 active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fcolor2 font124 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Registration</a>
+                        <div class="dropdown-menu" style="margin-top:10px;">
+                            <a class="dropdown-item" href="http://localhost/psb/registration.html">As Driver</a>
+                            <a class="dropdown-item" href="#">As Space Owner</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"> <button type="button" class="btn btn-outline-success font124" style="border-radius: 20px;">Login</button> </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>	
+
+
+<div class="container">
+    <div class="row">
+
+	<div class = "mid">
+		<h3></h3>
+
+		<div class = "reg">
+
+			<label for="">Name </label>
+			<input id ="fname" type = "text">
+			<p id = "name"></p>
+
+			<label for="">Username</label>
+			<input id ="uname" type ="text">
+			<p id = "uname"></p>
+
+			<label for="">Password</label>
+			<input id ="pass" type ="Password">
+			<p id = "pass"></p>
+
+
+			<label for="">Re-type Password</label>
+			<input id = "re-pass" type = "re-pass">
+			
+
+			<br>
+
+			<label for="">Gender</label>
+
+			 <br>
+			<input id = "gender" type="radio" name="gender" value="m" id="m">Male 
+            <input id = "gender" type="radio" name="gender" value="f" id="f">Female
+            <input id = "gender" type="radio" name="gender" value="O" id="O">Others
+
+            <p id ="Gender"></p>
+
+            <br></br>
+          
+            <label for="">Contact Number</label>
+            <br></br>
+            <input id ="cell" type = "text">
+            <p id ="cell"></p>
+
+
+            <label for="">Email</label>
+            <br></br>
+			<input id="email" type="text">
+			<p id="email"></p>
+
+				<br></br>
+			
+	
+
+ 		    <input  id ="submit" type="submit" value ="submit" >
+             
+
+             </div>
+</div>
+</div>		
+	</div>	
+
+
+    <script src="../psb/css/jquery-3.2.1.min.js"></script>
+	<script>
+
+		$("input#submit").click(function(){
+
+			var name 	= $("input#fname").val();
+			var email 	= $("input#email").val();
+			var pass 	= $("input#pass").val();
+			var Contact_number	= $("input#cell").val();
+
+
+
+			if( name == '' || email == '' || pass == '' || cell == ''||Contact_number == '' ){
+
+				$("h3").html("<span style='color:red;text-align: center;'>Field Must not be Empty</span>");
+			}else{
+				$("h3").html("<span style='color:green;text-align: center;'>Data is ok</span>");
+			}
+
+
+			if(name == ''){
+				$("input#fname").css({
+					'border'		: '1px solid red'
+				});
+				$("p#name").html("<span style='color:red;'>This field is required *</span>");
+			}else{
+				$("input#fname").css({
+					'border'		: '1px solid #333'
+				});
+				$("p#name").html(" ");
+			}
+
+			if(email == ''){
+				$("input#email").css({
+					'border'		: '1px solid red'
+				});
+				$("p#email").html("<span style='color:red;'>This field is required *</span>");
+			}else{
+				$("input#email").css({
+					'border'		: '1px solid #333'
+				});
+				$("p#email").html(" ");
+			}
+
+			if(pass == ''){
+				$("input#pass").css({
+					'border'		: '1px solid red'
+				});
+				$("p#pass").html("<span style='color:red;'>This field is required *</span>");
+			}else{
+				$("input#pass").css({
+					'border'		: '1px solid #333'
+				});
+				$("p#pass").html(" ");
+			}
+
+
+			if(Contact_number == ''){
+				$("input#cell").css({
+					'border'		: '1px solid red'
+				});
+				$("p#cell").html("<span style='color:red;'>This field is required *</span>");
+			}else{
+				$("input#cell").css({
+					'border'		: '1px solid #333'
+				});
+				$("p#cell").html(" ");
+			}
+
+		   if (Username == ''){
+ 				$("input#uname").css({
+
+ 					'border'	:'1px solid red'
+ 				});
+
+ 				$("p#uname").html("<span style ='color:red;'>This filed is required*</span>");			
+
+		   }else{
+                $("input#cell").css({
+
+                	'border'	: '1px solid #333'
+                });
+
+                $("p#cell").html("");
+
+		   }
+
+
+
+
+
+
+			$("input#fname").val('');
+			$("input#email").val('');
+			$("input#pass").val('');
+			$("input#cell").val('');
+
+		});
+
+	
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
